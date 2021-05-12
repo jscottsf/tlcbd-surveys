@@ -1,0 +1,269 @@
+{
+ "pages": [
+  {
+   "name": "page1",
+   "elements": [
+    {
+     "type": "text",
+     "name": "cleaning_minutes",
+     "title": "Minutes spent cleaning",
+     "isRequired": true,
+     "validators": [
+      {
+       "type": "numeric",
+       "minValue": 0,
+       "maxValue": 9999
+      }
+     ],
+     "inputType": "number",
+     "min": "0"
+    },
+    {
+     "type": "text",
+     "name": "syringe_count",
+     "title": "Number of syringes",
+     "isRequired": true,
+     "validators": [
+      {
+       "type": "numeric",
+       "minValue": 0,
+       "maxValue": 9999
+      }
+     ],
+     "inputType": "number",
+     "min": "0"
+    },
+    {
+     "type": "text",
+     "name": "engagement_count",
+     "title": "Number of engagements",
+     "isRequired": true,
+     "validators": [
+      {
+       "type": "numeric",
+       "minValue": 0,
+       "maxValue": 9999
+      }
+     ],
+     "inputType": "number",
+     "min": "0"
+    },
+    {
+     "type": "text",
+     "name": "inviting_space_intervention_count",
+     "title": "Number of inviting space interventions",
+     "isRequired": true,
+     "validators": [
+      {
+       "type": "numeric",
+       "minValue": 0,
+       "maxValue": 9999
+      }
+     ],
+     "inputType": "number",
+     "min": "0"
+    },
+    {
+     "type": "matrixdynamic",
+     "name": "Snapshot in time",
+     "valueName": "snapshot",
+     "isRequired": true,
+     "columns": [
+      {
+       "name": "time",
+       "title": "Time",
+       "cellType": "text",
+       "isRequired": true,
+       "inputType": "time"
+      },
+      {
+       "name": "child_count_under_teen",
+       "title": "Number of children (12 and under)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      },
+      {
+       "name": "child_count_teen",
+       "title": "Number of teenagers (ages 13-17)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      },
+      {
+       "name": "adult_count",
+       "title": "Adults (18-64)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      },
+      {
+       "name": "senior_count",
+       "title": "Seniors (64+)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      }
+     ],
+     "keyName": "time"
+    },
+    {
+     "type": "matrixdynamic",
+     "name": "Visitor tracking",
+     "valueName": "visitor_tracking",
+     "isRequired": true,
+     "columns": [
+      {
+       "name": "time",
+       "title": "Time",
+       "cellType": "dropdown",
+       "isRequired": true,
+       "choices": [
+        "7-11 AM",
+        "11-3 PM",
+        "3-8 PM"
+       ]
+      },
+      {
+       "name": "child_count_under_teen",
+       "title": "Number of children (12 and under)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      },
+      {
+       "name": "child_count_teen",
+       "title": "Number of teenagers (ages 13-17)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      },
+      {
+       "name": "adult_count",
+       "title": "Adults (18-64)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      },
+      {
+       "name": "senior_count",
+       "title": "Seniors (64+)",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      }
+     ],
+     "keyName": "time"
+    },
+    {
+     "type": "matrixdynamic",
+     "name": "program_tracking",
+     "title": "Program tracking",
+     "columns": [
+      {
+       "name": "program",
+       "title": "Program",
+       "cellType": "dropdown",
+       "isRequired": true,
+       "choices": [
+        "BGCSF",
+        "City Academy",
+        "Woo Yee",
+        "Demonstration Garden",
+        "Safe Passage Corner Captain",
+        "Healing Well",
+        "Sky Watchers",
+        "Zumba"
+       ]
+      },
+      {
+       "name": "child_count",
+       "title": "Number of children",
+       "cellType": "text",
+       "isRequired": true,
+       "validators": [
+        {
+         "type": "numeric",
+         "minValue": 0,
+         "maxValue": 9999
+        }
+       ],
+       "inputType": "number",
+       "min": "0"
+      }
+     ],
+     "keyName": "program"
+    },
+    {
+     "type": "comment",
+     "name": "Notes",
+     "valueName": "notes"
+    }
+   ]
+  }
+ ]
+}
