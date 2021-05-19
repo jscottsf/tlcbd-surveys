@@ -141,8 +141,8 @@
     },
     {
      "type": "matrixdynamic",
-     "name": "Visitor tracking",
-     "valueName": "visitor_tracking",
+     "name": "Participant tracking",
+     "valueName": "participant_tracking",
      "isRequired": true,
      "columns": [
       {
@@ -232,11 +232,12 @@
        "choices": [
         "BGCSF",
         "City Academy",
-        "Woo Yee",
         "Demonstration Garden",
-        "Safe Passage Corner Captain",
         "Healing Well",
+        "Safe Passage Corner Captain",
+        "SF Senior Center",
         "Sky Watchers",
+        "Woo Yee",
         "Zumba"
        ]
       },
@@ -257,6 +258,12 @@
       }
      ],
      "keyName": "program"
+    },
+    {
+     "type": "boolean",
+     "name": "Was there an incident?",
+     "valueName": "incident",
+     "defaultValue": "false"
     },
     {
      "type": "comment",
